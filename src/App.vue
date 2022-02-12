@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app>
+    <v-main>
+      <v-container class="main-container">
+        <v-card>
+          <v-card-title class="justify-center mb-4"
+            >Glyphdle ({{ $store.getters.guessedTimes }} / 20)</v-card-title
+          >
+        </v-card>
+        <MainGrid />
+        <Keyboard />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MainGrid from "./components/MainGrid";
+import Keyboard from "./components/Keyboard";
 
 export default {
   name: "App",
+
   components: {
-    HelloWorld,
+    MainGrid,
+    Keyboard,
   },
+
+  mounted() {
+    this.$store.commit("randomSeq");
+  },
+
+  data: () => ({
+    //
+  }),
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.main-container {
+  max-width: 800px;
+  min-height: 100vh;
 }
 </style>
