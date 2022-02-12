@@ -1,5 +1,5 @@
-function genShare(guessedSeq, seq) {
-  let txt = "Glyphdle (WIP) " + guessedSeq.length + "/20\n\n";
+function genShare(guessedSeq, seq, seqID) {
+  let txt = `Glyphdle (#${seqID}) ${guessedSeq.length}/20\n\n`;
   guessedSeq.forEach((gSeq) => {
     gSeq.forEach((g, i) => {
       if (seq.includes(g)) {
@@ -14,6 +14,7 @@ function genShare(guessedSeq, seq) {
     });
     txt = txt + "\n";
   });
+  txt = txt + `\nhttps://glyphdle.0x7f.cc/#${seqID}`;
   return txt;
 }
 

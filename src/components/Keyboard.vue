@@ -33,7 +33,7 @@
       <v-divider v-if="keyboardShow" />
       <div>
         <v-expand-transition>
-          <v-card-actions v-if="keyboardShow">
+          <v-card-actions v-if="keyboardShow" class="justify-center">
             <GlyphInput v-on:inputGlyph="newChar" />
           </v-card-actions>
         </v-expand-transition>
@@ -67,7 +67,11 @@ export default {
   methods: {
     share() {
       navigator.clipboard.writeText(
-        genShare(this.$store.state.guessedSeq, this.$store.state.seq)
+        genShare(
+          this.$store.state.guessedSeq,
+          this.$store.state.seq,
+          this.$store.state.seqID
+        )
       );
     },
     newChar: function (g) {

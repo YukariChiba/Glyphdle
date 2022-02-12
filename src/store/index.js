@@ -8,11 +8,15 @@ import GlyphSeq from "@/data/GlyphSeq.json";
 export default new Vuex.Store({
   state: {
     seq: [],
+    seqID: null,
     currentSeq: [],
     guessedSeq: [],
     status: 0,
   },
   getters: {
+    allSeqsLength: () => {
+      return GlyphSeq.length;
+    },
     guessedTimes: (state) => {
       return state.guessedSeq.length;
     },
@@ -26,14 +30,19 @@ export default new Vuex.Store({
   mutations: {
     reset(state) {
       state.seq = [];
+      state.seqID = null;
       state.currentSeq = [];
       state.guessedSeq = [];
       state.status = 0;
     },
+    setSeq(state, i) {
+      state.seqID = i;
+      state.seq = GlyphSeq[state.seqID].map((g) => g.toUpperCase());
+      console.log(state.seq);
+    },
     randomSeq(state) {
-      state.seq = GlyphSeq[Math.floor(Math.random() * GlyphSeq.length)].map(
-        (g) => g.toUpperCase()
-      );
+      state.seqID = Math.floor(Math.random() * GlyphSeq.length);
+      state.seq = GlyphSeq[state.seqID].map((g) => g.toUpperCase());
       console.log(state.seq);
     },
     delGlyph(state) {

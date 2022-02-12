@@ -27,12 +27,13 @@ export default {
   },
 
   mounted() {
-    this.$store.commit("randomSeq");
+    let pid = parseInt(location.hash.substring(1));
+    if (pid >= 0 && pid < this.$store.getters.allSeqsLength) {
+      this.$store.commit("setSeq", pid);
+    } else {
+      this.$store.commit("randomSeq");
+    }
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
 
