@@ -1,5 +1,5 @@
 <template>
-  <v-card :color="color" class="mx-2">
+  <v-card :color="color" class="mx-2" :outlined="focused">
     <v-card-title class="justify-center">
       <svg
         width="100%"
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  props: ["glyph", "color"],
+  props: ["glyph", "color", "focused"],
 };
 </script>
 

@@ -19,6 +19,7 @@
         id="glyphcol"
         color="default"
         class="flex-grow-1"
+        :focused="i == currentIndex"
         v-for="(g, i) in currentSeqProcessed"
         :key="i"
       />
@@ -40,7 +41,6 @@ export default {
     getColor(g, i) {
       let trueSeq = this.$store.state.seq;
       let ret = "default";
-      console.log(g, i);
       if (trueSeq.includes(g)) {
         ret = "orange";
       }
@@ -51,6 +51,9 @@ export default {
     },
   },
   computed: {
+    currentIndex() {
+      return this.$store.state.currentSeq.length;
+    },
     currentSeqProcessed() {
       if (this.$store.state.currentSeq.length == 5)
         return this.$store.state.currentSeq;

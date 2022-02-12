@@ -45,7 +45,6 @@ export default {
   methods: {
     endTracing: function () {
       var evaluation = this.evaluateStrokes(this.foundStrokes);
-      console.log(evaluation);
       if (evaluation) {
         this.$emit("inputGlyph", evaluation.toUpperCase());
       }
@@ -208,7 +207,6 @@ export default {
     recursiveOffsetLeftAndTop: function (element) {
       var offsetLeft = 0;
       var offsetTop = 0;
-      console.log(element);
       while (element) {
         offsetLeft += element.offsetLeft;
         offsetTop += element.offsetTop;
