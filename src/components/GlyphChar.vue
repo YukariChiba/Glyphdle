@@ -38,10 +38,12 @@ export default {
   padding: 8px;
 }
 ruby {
+  ruby-position: under;
   i {
     font-size: 400px;
   }
   rt {
+    margin-top: 40px;
     font-size: 70px;
     font-weight: 300;
   }

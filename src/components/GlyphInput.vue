@@ -14,7 +14,7 @@
         @mousemove="traceMovement"
         @touchstart="startTracing"
         @touchend="endTracing"
-        @touchmove="traceMovement"
+        @touchmove.prevent="traceMovement"
       >
         <defs>
           <filter id="blur">
@@ -56,11 +56,9 @@ export default {
       this.removeElementsByClassName("glyphpad-trace");
       this.removeElementsByClassName("glyphpad-stroke");
       this.resetCircles();
-      //unblockScreenScroll();
     },
     startTracing: function (e) {
       this.tracing = true;
-      //blockScreenScroll();
       var circles = this.$refs.svg.getElementsByTagName("circle");
       for (var i = 0; i < circles.length; i++) {
         this.circlesPosition[circles[i].getAttribute("data-name")] = [
