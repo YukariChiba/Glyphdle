@@ -8,7 +8,7 @@
       <glyph-char
         :glyph="g"
         :color="getColor(g, i)"
-        class="flex-grow-1"
+        class="flex-grow-1 flex-shrink-1"
         v-for="(g, i) in seq"
         :key="i"
       />
@@ -18,7 +18,7 @@
         :glyph="g"
         id="glyphcol"
         color="default"
-        class="flex-grow-1"
+        class="flex-grow-1 flex-shrink-1"
         :focused="i == currentIndex"
         v-for="(g, i) in currentSeqProcessed"
         :key="i"
