@@ -109,16 +109,16 @@ export default {
     traceMovement: function (eventData) {
       let eX = 0,
         eY = 0;
-      if ("layerX" in eventData) {
-        eX = eventData.layerX;
-        eY = eventData.layerY;
+      if (!("touches" in eventData)) {
+        console.log("unknown");
+        let o = this.recursiveOffsetLeftAndTop(this.$refs.svgdiv);
+        eX = eventData.clientX - o.offsetLeft;
+        eY = eventData.clientY - o.offsetTop;
       } else {
+        console.log("touch");
         let o = this.recursiveOffsetLeftAndTop(this.$refs.svgdiv);
         eX = eventData.touches[0].clientX - o.offsetLeft;
         eY = eventData.touches[0].clientY - o.offsetTop;
-        // let b = this.$refs.svg.getBoundingClientRect();
-        // eX = eventData.touches[0].pageX - b.x + eventData.touches[0].radiusX;
-        // eY = eventData.touches[0].pageY - b.y - eventData.touches[0].radiusY;
       }
       if (!this.tracing) return;
       this.pushPolyline(eX, eY);
