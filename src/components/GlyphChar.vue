@@ -14,7 +14,7 @@
             <ruby>
               <i
                 :class="'ig-' + glyph.toLowerCase()"
-                class="bold glyph-char"
+                class="glyph-char"
                 v-if="glyph"
               ></i>
               <i class="glyph-char" v-else>&#12288;</i>

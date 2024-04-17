@@ -9,6 +9,7 @@
         width="300"
         height="300"
         viewBox="0 0 400 400"
+        preserveAspectRatio="xMidYMid slice"
         @mousedown="startTracing"
         @mouseup="endTracing"
         @mousemove="traceMovement"
@@ -31,8 +32,8 @@ import glyphtionary from "@/data/GlyphDots.json";
 
 export default {
   data: () => ({
-    height: 200,
-    width: 200,
+    height: 300,
+    width: 300,
     tracing: false,
     circlesPosition: {},
     currentPolyline: null,

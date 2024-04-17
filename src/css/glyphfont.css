@@ -442,151 +442,151 @@
 }
 
 .ig-open-all:before {
-  content: "";
+  content: "\00c4";
 }
 
 .ig-strong:before {
-  content: "";
+  content: "\00c5";
 }
 
 .ig-xm:before {
-  content: "";
+  content: "\00c6";
 }
 
 .ig-truth:before {
-  content: "";
+  content: "\00c7";
 }
 
 .ig-portal:before {
-  content: "";
+  content: "\00c8";
 }
 
 .ig-harmony:before {
-  content: "";
+  content: "\00c9";
 }
 
 .ig-peace:before {
-  content: "";
+  content: "\00c9";
 }
 
 .ig-technology:before {
-  content: "";
+  content: "\00ca";
 }
 
 .ig-intelligence:before {
-  content: "";
+  content: "\00cb";
 }
 
 .ig-grow:before {
-  content: "";
+  content: "\00cc";
 }
 
 .ig-unbounded:before {
-  content: "";
+  content: "\00cd";
 }
 
 .ig-you:before {
-  content: "";
+  content: "\00ce";
 }
 
-.ig-other:before {
-  content: "";
+.ig-we:before {
+  content: "\00cf";
 }
 
 .ig-us:before {
-  content: "";
+  content: "\00cf";
 }
 
 .ig-them:before {
-  content: "";
+  content: "\00d0";
 }
 
 .ig-share:before {
-  content: "";
+  content: "\00d1";
 }
 
 .ig-worth:before {
-  content: "";
+  content: "\00d2";
 }
 
 .ig-victory:before {
-  content: "";
+  content: "\00d3";
 }
 
 .ig-presence:before {
-  content: "";
+  content: "\00d4";
 }
 
 .ig-perspective:before {
-  content: "";
+  content: "\00d5";
 }
 
 .ig-mystery:before {
-  content: "";
+  content: "\00d6";
 }
 
 .ig-nzeer:before {
-  content: "";
+  content: "\00d7";
 }
 
 .ig-interrupt:before {
-  content: "";
+  content: "\00d8";
 }
 
 .ig-legacy:before {
-  content: "";
+  content: "\00d9";
 }
 
 .ig-live-again:before {
-  content: "";
+  content: "\00da";
 }
 
 .ig-reincarnate:before {
-  content: "";
+  content: "\00da";
 }
 
 .ig-restraint:before {
-  content: "";
+  content: "\00db";
 }
 
 .ig-abandon:before {
-  content: "";
+  content: "\00dc";
 }
 
 .ig-knowledge:before {
-  content: "";
+  content: "\00dd";
 }
 
 .ig-destination:before {
-  content: "";
+  content: "\00de";
 }
 
 .ig-star:before {
-  content: "";
+  content: "\00df";
 }
 
 .ig-nemesis:before {
-  content: "";
+  content: "\00e0";
 }
 
 .ig-field:before {
-  content: "";
+  content: "\00e1";
 }
 
 .ig-link:before {
-  content: "";
+  content: "\00e2";
 }
 
 .ig-key:before {
-  content: "";
+  content: "\00e3";
 }
 
 .ig-shield:before {
-  content: "";
+  content: "\00e4";
 }
 
 .ig-toast:before {
-  content: " ";
+  content: "\00e5";
 }
 
 .ig-i:before {
@@ -734,112 +734,19 @@
 }
 
 @font-face {
-  font-family: "Ingress Glyphs";
-  src: url("/fonts/jblab-ingress-glyphs.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/jblab-ingress-glyphs.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/jblab-ingress-glyphs.otf") format("opentype"),
-    url("/fonts/jblab-ingress-glyphs.svg") format("svg"),
-    url("/fonts/jblab-ingress-glyphs.ttf") format("truetype"),
-    url("/fonts/jblab-ingress-glyphs.woff") format("woff"),
-    url("/fonts/jblab-ingress-glyphs.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ingress Glyphs Light";
-  src: url("/fonts/jblab-ingress-glyphs.light.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/jblab-ingress-glyphs.light.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/jblab-ingress-glyphs.light.otf") format("opentype"),
-    url("/fonts/jblab-ingress-glyphs.light.svg") format("svg"),
-    url("/fonts/jblab-ingress-glyphs.light.ttf") format("truetype"),
-    url("/fonts/jblab-ingress-glyphs.light.woff") format("woff"),
-    url("/fonts/jblab-ingress-glyphs.light.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Ingress Glyphs Bold";
-  src: url("/fonts/jblab-ingress-glyphs.bold.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/jblab-ingress-glyphs.bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/jblab-ingress-glyphs.bold.otf") format("opentype"),
+  src: url("/fonts/jblab-ingress-glyphs.bold.otf") format("opentype"),
     url("/fonts/jblab-ingress-glyphs.bold.svg") format("svg"),
     url("/fonts/jblab-ingress-glyphs.bold.ttf") format("truetype"),
     url("/fonts/jblab-ingress-glyphs.bold.woff") format("woff"),
     url("/fonts/jblab-ingress-glyphs.bold.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ingress Glyphs Extra Bold";
-  src: url("/fonts/jblab-ingress-glyphs.extra-bold.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/jblab-ingress-glyphs.extra-bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/jblab-ingress-glyphs.extra-bold.otf") format("opentype"),
-    url("/fonts/jblab-ingress-glyphs.extra-bold.svg") format("svg"),
-    url("/fonts/jblab-ingress-glyphs.extra-bold.ttf") format("truetype"),
-    url("/fonts/jblab-ingress-glyphs.extra-bold.woff") format("woff"),
-    url("/fonts/jblab-ingress-glyphs.extra-bold.woff2") format("woff2");
-  /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="ig-"],
 [class*="ig-"] {
-  font-family: "Ingress Glyphs";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="ig-"].light,
-[class*="ig-"].light {
-  font-family: "Ingress Glyphs Light";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="ig-"].bold,
-[class*="ig-"].bold {
   font-family: "Ingress Glyphs Bold";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="ig-"].extra-bold,
-[class*="ig-"].extra-bold {
-  font-family: "Ingress Glyphs Extra Bold";
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
