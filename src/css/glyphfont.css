@@ -125,7 +125,15 @@
   content: "9";
 }
 
+.ig-individual:before {
+  content: "9";
+}
+
 .ig-die:before {
+  content: ":";
+}
+
+.ig-death:before {
   content: ":";
 }
 
@@ -147,6 +155,10 @@
 
 .ig-conflict:before {
   content: ">";
+}
+
+.ig-collective:before {
+  content: "?";
 }
 
 .ig-shapers:before {
@@ -237,6 +249,10 @@
   content: "Q";
 }
 
+.ig-progress:before {
+  content: "Q";
+}
+
 .ig-success:before {
   content: "Q";
 }
@@ -251,6 +267,10 @@
 
 .ig-complex:before {
   content: "T";
+}
+
+.ig-creativity:before {
+  content: "U";
 }
 
 .ig-idea:before {
@@ -385,12 +405,20 @@
   content: "s";
 }
 
+.ig-enlightenment:before {
+  content: "s";
+}
+
 .ig-balance:before {
   content: "t";
 }
 
 .ig-perfection:before {
   content: "t";
+}
+
+.ig-being:before {
+  content: "u";
 }
 
 .ig-human:before {
@@ -486,6 +514,10 @@
 }
 
 .ig-you:before {
+  content: "\00ce";
+}
+
+.ig-your:before {
   content: "\00ce";
 }
 
@@ -586,6 +618,10 @@
 }
 
 .ig-toast:before {
+  content: "\00e5";
+}
+
+.ig-toasty:before {
   content: "\00e5";
 }
 
