@@ -43,14 +43,12 @@
 </template>
 
 <script>
-import Glyphs from "@/data/Glyph.json";
 import GlyphInput from "@/components/GlyphInput";
 import { genShare } from "@/utils/GenShare.js";
 
 export default {
   data: () => ({
     keyboard: false,
-    glyphs: Glyphs,
   }),
   computed: {
     keyboardShow() {
